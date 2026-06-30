@@ -541,12 +541,17 @@ section { padding: 7rem 0; }
 
 /* Ghost button for GitHub in hero */
 .btn-ghost {
-  background: rgba(255,255,255,0.05);
-  color: var(--text-muted);
-  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+  border: 1px solid var(--border-hover);
   gap: 0.45rem;
 }
-.btn-ghost:hover { background: rgba(255,255,255,0.1); color: var(--text); border-color: var(--border-hover); transform: translateY(-2px); }
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.15);
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
 
 /* Section subtitle */
 .section-sub { color: var(--text-dim); font-size: 0.9rem; margin-top: -1.5rem; margin-bottom: 2.5rem; }
