@@ -454,8 +454,7 @@ section { padding: 7rem 0; }
   box-shadow: 0 10px 40px rgba(99,102,241,0.15);
 }
 
-/* Default item: year col-1 | spine col-2 | card col-3 */
-.ptl-item { }
+
 .ptl-item .ptl-year   { grid-column: 1; grid-row: 1; text-align: right; padding-right: 1.4rem; padding-left: 0; }
 .ptl-item .ptl-spine  { grid-column: 2; grid-row: 1; }
 .ptl-item .ptl-card   { grid-column: 3; grid-row: 1; }
@@ -594,8 +593,13 @@ html, body { overflow-x: hidden; }
 
 @media (max-width: 760px) {
 
-  /* ── Nav: hide Resume button on mobile, hamburger takes priority ── */
-  .btn-nav { display: none; }
+  /* ── Nav: Keep Resume button visible on mobile, align neatly ── */
+  .btn-nav {
+    display: inline-flex;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    margin-left: auto;
+  }
 
   /* ── Section padding ── */
   section { padding: 4rem 0; }
