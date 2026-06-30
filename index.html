@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zi You Lim – Software Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Zi You Lim, Software Engineering student at Monash University specialising in full-stack, iOS, and backend development."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">ZY<span class="dot">.</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a
+          href="https://drive.google.com/uc?export=download&id=1DIG77CC-o09yUfyojDv03bXv-c_nlj5y"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-nav"
+          id="resume-btn"
+          >Resume</a
+        >
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">Zi You <span class="gradient-text">Lim</span></h1>
+        <p class="hero-title">
+          <span class="typed-text" id="typed-text"></span
+          ><span class="cursor">|</span>
+        </p>
+        <p class="hero-sub">
+          Software Engineering student at <strong>Monash University</strong> ·
+          Building fast, reliable, and user-friendly applications across
+          full-stack, iOS &amp; backend.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="view-work-btn"
+            >View My Work</a
+          >
+          <a href="#contact" class="btn btn-outline" id="contact-btn"
+            >Get In Touch</a
+          >
+          <a
+            href="https://github.com/zlim0056"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost"
+            id="github-btn"
+            aria-label="GitHub"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+            GitHub
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Months Internship</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">79.97</span>
+            <span class="stat-label">WAM</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">01 / About Me</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>
+              Passionate about building software that
+              <span class="gradient-text">matters</span>
+            </h2>
+            <p>
+              I'm a Software Engineering student at Monash University with a
+              strong focus on both backend and frontend development. My
+              experience spans full-stack web, native iOS, and AI-powered
+              backend systems — built through internships, hackathons, and
+              university projects.
+            </p>
+            <p>
+              I thrive in Agile environments, value clean and maintainable code,
+              and enjoy collaborating across teams to deliver software that
+              solves real problems.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🎓</span>
+                <span
+                  >Monash University, Bachelor of Engineering (Hons) –
+                  Software</span
+                >
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💼</span>
+                <span
+                  >Programmer Intern @ Netwitz Sdn Bhd (Nov 2024 – Feb
+                  2025)</span
+                >
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🏆</span>
+                <span>UNIHACK 2025 Hackathon Participant</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📍</span>
+                <span>Clayton, Melbourne VIC, Australia</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-card-wrap">
+            <div class="about-card glass-card">
+              <div class="about-avatar">ZY</div>
+              <div class="about-info">
+                <p class="about-name">Zi You Lim</p>
+                <p class="about-role">Software Engineering Student</p>
+                <p class="about-uni">Monash University · 2027</p>
+              </div>
+              <div class="about-links">
+                <a
+                  href="mailto:limziyou5586@gmail.com"
+                  class="about-link"
+                  id="email-link"
+                  >✉ Email</a
+                >
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="about-link"
+                  id="linkedin-link"
+                  >🔗 LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">02 / Skills</div>
+        <h2 class="section-title">
+          Tech <span class="gradient-text">Stack</span>
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-category glass-card" id="skill-languages">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">⟨/⟩</span>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Swift</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">MATLAB</span>
+              <span class="skill-tag">MIPS</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card" id="skill-frameworks">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">⚙</span>
+              <h3>Frameworks &amp; Libraries</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag accent">React</span>
+              <span class="skill-tag accent">Django</span>
+              <span class="skill-tag accent">Flask</span>
+              <span class="skill-tag accent">UIKit</span>
+              <span class="skill-tag accent">PyQt5</span>
+              <span class="skill-tag accent">Pandas</span>
+              <span class="skill-tag accent">NumPy</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card" id="skill-databases">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🗄</span>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag green">MySQL</span>
+              <span class="skill-tag green">MongoDB</span>
+              <span class="skill-tag green">SQLite</span>
+              <span class="skill-tag green">Core Data</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card" id="skill-tools">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🔧</span>
+              <h3>Tools &amp; Practices</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag purple">Git</span>
+              <span class="skill-tag purple">GitHub</span>
+              <span class="skill-tag purple">REST APIs</span>
+              <span class="skill-tag purple">Agile</span>
+              <span class="skill-tag purple">Xcode</span>
+              <span class="skill-tag purple">VS Code</span>
+              <span class="skill-tag purple">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">03 / Projects</div>
+        <h2 class="section-title">
+          What I've <span class="gradient-text">Built</span>
+        </h2>
+        <p class="section-sub">A timeline of my key projects — latest first.</p>
+
+        <div class="proj-timeline">
+          <!-- ── 1. RoadPulse (Latest) ── -->
+          <div class="ptl-item" id="project-roadpulse">
+            <div class="ptl-spine">
+              <div
+                class="ptl-dot"
+                style="
+                  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+                  box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.15);
+                "
+              ></div>
+            </div>
+            <div class="ptl-year ptl-year-latest">2025 · Latest</div>
+            <div
+              class="ptl-card glass-card"
+              style="
+                border-color: rgba(99, 102, 241, 0.3);
+                background: rgba(99, 102, 241, 0.06);
+              "
+            >
+              <div class="ptl-badge">⭐ Featured</div>
+              <div class="ptl-card-header">
+                <div
+                  class="project-icon"
+                  style="background: linear-gradient(135deg, #6366f1, #8b5cf6)"
+                >
+                  🗺
+                </div>
+                <div>
+                  <h3>RoadPulse</h3>
+                  <p class="project-type">Full-Stack Web App · Team Project</p>
+                </div>
+                <span class="project-role-badge">System Architect</span>
+              </div>
+              <p class="project-desc">
+                Community-driven traffic monitoring and navigation platform
+                inspired by Waze. Enables real-time incident reporting, GPS
+                tracking, AI-powered traffic predictions, and a user rewards
+                system.
+              </p>
+              <ul class="project-bullets">
+                <li>
+                  Interactive maps with Google Maps API, markers &amp;
+                  geolocation
+                </li>
+                <li>REST APIs built with Django REST Framework</li>
+                <li>Responsive React frontend with Vite</li>
+                <li>Real-time incident reports &amp; live map updates</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Django</span>
+                <span class="stack-tag">Google Maps API</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">MySQL</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Fit3170-RoadPulse/RoadPulse"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-action-btn"
+                  id="roadpulse-code"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 2. Spend Management App ── -->
+          <div class="ptl-item ptl-right" id="project-spendapp">
+            <div class="ptl-spine">
+              <div
+                class="ptl-dot"
+                style="background: linear-gradient(135deg, #10b981, #059669)"
+              ></div>
+            </div>
+            <div class="ptl-year">2025</div>
+            <div class="ptl-card glass-card">
+              <div class="ptl-card-header">
+                <div
+                  class="project-icon"
+                  style="background: linear-gradient(135deg, #10b981, #059669)"
+                >
+                  💰
+                </div>
+                <div>
+                  <h3>Spend Management App</h3>
+                  <p class="project-type">Native iOS App · Solo Project</p>
+                </div>
+                <span
+                  class="project-role-badge"
+                  style="
+                    border-color: rgba(16, 185, 129, 0.3);
+                    color: #6ee7b7;
+                    background: rgba(16, 185, 129, 0.12);
+                  "
+                  >Solo Developer</span
+                >
+              </div>
+              <p class="project-desc">
+                Personal finance management app for iOS with expense/income
+                tracking, budget monitoring, spending analytics, and
+                multi-currency support.
+              </p>
+              <ul class="project-bullets">
+                <li>MVC architecture with UIKit &amp; Swift</li>
+                <li>Core Data persistence for financial records</li>
+                <li>Budget tracking with notification alerts</li>
+                <li>Intuitive multi-screen navigation UI</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">Swift</span>
+                <span class="stack-tag">UIKit</span>
+                <span class="stack-tag">Core Data</span>
+                <span class="stack-tag">Xcode</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/zlim0056/spend-management-app"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-action-btn"
+                  id="spendapp-code"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 3. Santorini Board Game ── -->
+          <div class="ptl-item" id="project-santorini">
+            <div class="ptl-spine">
+              <div
+                class="ptl-dot"
+                style="background: linear-gradient(135deg, #3b82f6, #1d4ed8)"
+              ></div>
+            </div>
+            <div class="ptl-year">2025</div>
+            <div class="ptl-card glass-card">
+              <div class="ptl-card-header">
+                <div
+                  class="project-icon"
+                  style="background: linear-gradient(135deg, #3b82f6, #1d4ed8)"
+                >
+                  🏛
+                </div>
+                <div>
+                  <h3>Santorini Board Game</h3>
+                  <p class="project-type">Desktop Game · Team Project</p>
+                </div>
+                <span
+                  class="project-role-badge"
+                  style="
+                    border-color: rgba(59, 130, 246, 0.3);
+                    color: #93c5fd;
+                    background: rgba(59, 130, 246, 0.12);
+                  "
+                  >Team Developer</span
+                >
+              </div>
+              <p class="project-desc">
+                Digital implementation of the Santorini strategy board game with
+                full game logic, an interactive Swing GUI, and extensible God
+                Card mechanics using OOP design principles.
+              </p>
+              <ul class="project-bullets">
+                <li>Worker movement, building &amp; win condition logic</li>
+                <li>
+                  God Cards (Artemis, Demeter) via inheritance &amp;
+                  polymorphism
+                </li>
+                <li>Interactive Java Swing GUI with menus &amp; tutorials</li>
+                <li>Developed across 3 Agile sprints</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">Java</span>
+                <span class="stack-tag">Java Swing</span>
+                <span class="stack-tag">OOP</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/zlim0056/santorini-boardgame"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-action-btn"
+                  id="santorini-code"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 4. UNIHACK 2025 ── -->
+          <div class="ptl-item ptl-right" id="project-unihack">
+            <div class="ptl-spine">
+              <div
+                class="ptl-dot"
+                style="background: linear-gradient(135deg, #ec4899, #be185d)"
+              ></div>
+            </div>
+            <div class="ptl-year">2025</div>
+            <div class="ptl-card glass-card">
+              <div class="ptl-badge hackathon">🏆 Hackathon</div>
+              <div class="ptl-card-header">
+                <div
+                  class="project-icon"
+                  style="background: linear-gradient(135deg, #ec4899, #be185d)"
+                >
+                  🏫
+                </div>
+                <div>
+                  <h3>Campus Navigator</h3>
+                  <p class="project-type">UNIHACK 2025 · Web App</p>
+                </div>
+                <span
+                  class="project-role-badge"
+                  style="
+                    border-color: rgba(236, 72, 153, 0.3);
+                    color: #f9a8d4;
+                    background: rgba(236, 72, 153, 0.12);
+                  "
+                  >Frontend + Backend</span
+                >
+              </div>
+              <p class="project-desc">
+                Interactive campus navigation app for Monash University built
+                during UNIHACK 2025, featuring a clickable map, building images,
+                and to-do list for students and visitors.
+              </p>
+              <ul class="project-bullets">
+                <li>Frontend: login, sign-up, map &amp; to-do list pages</li>
+                <li>Flask backend with user auth &amp; database integration</li>
+                <li>Coordinated GitHub branching &amp; conflict resolution</li>
+                <li>Delivered under tight hackathon time constraints</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">Flask</span>
+                <span class="stack-tag">Python</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/gylian0320/hackatron2025"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-action-btn"
+                  id="unihack-code"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 5. Project Management Tool ── -->
+          <div class="ptl-item ptl-oldest" id="project-pmt">
+            <div class="ptl-spine">
+              <div
+                class="ptl-dot"
+                style="background: linear-gradient(135deg, #f59e0b, #d97706)"
+              ></div>
+            </div>
+            <div class="ptl-year ptl-year-oldest">2024 · Earliest</div>
+            <div class="ptl-card glass-card ptl-card-oldest">
+              <div class="ptl-card-header">
+                <div
+                  class="project-icon"
+                  style="background: linear-gradient(135deg, #f59e0b, #d97706)"
+                >
+                  📋
+                </div>
+                <div>
+                  <h3>Project Management Tool</h3>
+                  <p class="project-type">Desktop App · Team Project</p>
+                </div>
+                <span class="project-role-badge">Team Developer</span>
+              </div>
+              <p class="project-desc">
+                Jira-inspired desktop project management application with Agile
+                features including product backlog, sprint planning, Kanban
+                boards, and role-based access control.
+              </p>
+              <ul class="project-bullets">
+                <li>Kanban board, sprint planning &amp; issue tracking</li>
+                <li>Role-based access control &amp; user authentication</li>
+                <li>SQLite persistent data storage</li>
+                <li>Reusable PyQt5 GUI components</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">PyQt5</span>
+                <span class="stack-tag">SQLite</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/zlim0056/project-management-tool"
+                  target="_blank"
+                  rel="noopener"
+                  class="proj-action-btn"
+                  id="pmt-code"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /proj-timeline -->
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-label">04 / Experience</div>
+        <h2 class="section-title">
+          Work <span class="gradient-text">Experience</span>
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item" id="exp-netwitz">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Programmer Intern</h3>
+                  <p class="timeline-company">
+                    Netwitz Sdn Bhd · Kuala Lumpur &amp; Penang, Malaysia
+                  </p>
+                </div>
+                <span class="timeline-date">Nov 2024 – Feb 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  Developed Python-based AI tools for real-time NOC monitoring
+                  and system performance analysis
+                </li>
+                <li>
+                  Built interactive dashboards with Pandas &amp; NumPy for live
+                  visualisation of system health and critical events
+                </li>
+                <li>
+                  Automated alert classification, log analysis, and incident
+                  prioritisation — significantly reducing manual workload
+                </li>
+                <li>
+                  Created PHP backend systems for large-scale data ingestion,
+                  processing, and AI integration with machine-generated logs
+                </li>
+                <li>
+                  Collaborated in cross-functional teams to deliver scalable
+                  solutions for AI-powered machine data automation
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Pandas</span>
+                <span class="stack-tag">NumPy</span>
+                <span class="stack-tag">PHP</span>
+                <span class="stack-tag">AI Tools</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="container">
+        <div class="section-label">05 / Education</div>
+        <h2 class="section-title">
+          Academic <span class="gradient-text">Background</span>
+        </h2>
+        <div class="edu-grid">
+          <div class="edu-card glass-card" id="edu-monash">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <h3>Bachelor of Engineering (Honours)</h3>
+              <p class="edu-field">Software Engineering</p>
+              <p class="edu-uni">Monash University, Australia</p>
+              <div class="edu-meta">
+                <span class="edu-badge">Expected 2027</span>
+                <span class="edu-wam">WAM: 79.97</span>
+              </div>
+            </div>
+          </div>
+          <div class="edu-card glass-card" id="edu-mufy">
+            <div class="edu-icon">📚</div>
+            <div class="edu-info">
+              <h3>Monash University Foundation Year</h3>
+              <p class="edu-field">MUFY Programme</p>
+              <p class="edu-uni">Sunway College, Kuala Lumpur, Malaysia</p>
+              <div class="edu-meta">
+                <span class="edu-badge">Completed 2023</span>
+                <span class="edu-wam">WAM: 94.39</span>
+              </div>
+              <div class="edu-extras">
+                <span class="achievement-tag"
+                  >🏅 Peer Mentor – Mathematics Unit 1 (2022)</span
+                >
+                <span class="achievement-tag"
+                  >🏅 Peer Mentor – Mathematics Unit 2 (2023)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-label">06 / Contact</div>
+        <h2 class="section-title">
+          Let's <span class="gradient-text">Connect</span>
+        </h2>
+        <p class="contact-sub">
+          I'm currently open to internships, grad roles, and interesting
+          projects. Feel free to reach out!
+        </p>
+        <div class="contact-grid">
+          <a
+            href="mailto:limziyou5586@gmail.com"
+            class="contact-card glass-card"
+            id="contact-email"
+          >
+            <span class="contact-icon">✉</span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">limziyou5586@gmail.com</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a
+            href="tel:0472681061"
+            class="contact-card glass-card"
+            id="contact-phone"
+          >
+            <span class="contact-icon">📱</span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">0472 681 061</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener"
+            class="contact-card glass-card"
+            id="contact-linkedin"
+          >
+            <span class="contact-icon">🔗</span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/zi-you-lim</span>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a
+            href="https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID"
+            target="_blank"
+            rel="noopener"
+            class="contact-card glass-card"
+            id="contact-resume"
+          >
+            <span class="contact-icon">📄</span>
+            <span class="contact-label">Resume</span>
+            <span class="contact-value">Download PDF</span>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container footer-inner">
+        <span class="footer-logo">ZY<span class="dot">.</span></span>
+        <p class="footer-copy">© 2026 Zi You Lim</p>
+        <nav class="footer-nav">
+          <a href="#hero">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
