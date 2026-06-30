@@ -719,9 +719,49 @@ html, body { overflow-x: hidden; }
   .section-title { font-size: 1.8rem; margin-bottom: 1.5rem; }
 }
 
+
+/* ==================== REGION SWITCHER ==================== */
+.region-switch {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2px;
+  backdrop-filter: blur(8px);
+}
+.region-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all var(--transition);
+}
+.region-btn:hover {
+  color: var(--text);
+}
+.region-btn.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+}
+
 /* Extra small phones */
 @media (max-width: 380px) {
   .hero-name { font-size: 2.2rem; }
   .hero-actions .btn { max-width: 100%; }
   .project-icon { width: 36px !important; height: 36px !important; min-width: 36px !important; font-size: 1rem !important; }
 }
+
+@media (max-width: 760px) {
+  .nav-inner { gap: 0.6rem !important; }
+  .region-switch { margin-left: auto; }
+}
+

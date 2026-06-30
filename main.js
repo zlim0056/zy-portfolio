@@ -104,3 +104,68 @@ document.querySelectorAll('.project-card').forEach(card => {
   }
   draw();
 })();
+
+/* ==================== REGION SWITCHER LOGIC ==================== */
+const regionData = {
+  AU: {
+    name: 'Zi You Lim',
+    firstName: 'Zi You',
+    lastName: 'Lim',
+    phone: '+61 472 681 061',
+    tel: 'tel:+61472681061',
+    copyright: '© 2026 Zi You Lim'
+  },
+  MY: {
+    name: 'Lim Zi You',
+    firstName: 'Lim',
+    lastName: 'Zi You',
+    phone: '+60 12 938 2782',
+    tel: 'tel:+60129382782',
+    copyright: '© 2026 Lim Zi You'
+  }
+};
+
+const regionSwitch = document.getElementById('region-switch');
+if (regionSwitch) {
+  const btns = regionSwitch.querySelectorAll('.region-btn');
+  const heroNameEl = document.getElementById('hero-name');
+  const aboutNameEl = document.getElementById('about-name');
+  const footerCopyEl = document.getElementById('footer-copy');
+  const contactPhoneEl = document.getElementById('contact-phone');
+  const contactPhoneVal = document.getElementById('contact-phone-value');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const region = btn.getAttribute('data-region');
+      
+      // Update active button state
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const data = regionData[region];
+      if (data) {
+        // Dynamically update document title
+        document.title = `${data.name} – Software Engineering Portfolio`;
+
+        // Update name outputs
+        if (heroNameEl) {
+          heroNameEl.innerHTML = `${data.firstName} <span class="gradient-text">${data.lastName}</span>`;
+        }
+        if (aboutNameEl) {
+          aboutNameEl.textContent = data.name;
+        }
+        if (footerCopyEl) {
+          footerCopyEl.textContent = data.copyright;
+        }
+        // Update contact number link & values
+        if (contactPhoneEl) {
+          contactPhoneEl.setAttribute('href', data.tel);
+        }
+        if (contactPhoneVal) {
+          contactPhoneVal.textContent = data.phone;
+        }
+      }
+    });
+  });
+}
+
